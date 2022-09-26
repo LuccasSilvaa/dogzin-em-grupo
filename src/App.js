@@ -1,8 +1,10 @@
-import logo from './logo.svg';
 import React from 'react'
+import Rotas from './services/Rotas';
 
 export default function App() {
   return (
-    <div>App</div>
+    <div>
+      <Rotas />
+    </div>
   )
 }
