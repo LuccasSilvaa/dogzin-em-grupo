@@ -1,28 +1,17 @@
-import React, {useState} from 'react'
-import axios from 'axios'
-import * as S from './dogstyle'
-import {Link} from 'react-router-dom'
+import styled from "styled-components";
 
 
-export default function Dogpage() {
+export const HomeStyled = styled.div`
+  background-color: black;
+  color: white;
 
-  const [dog, setDog] = useState()
-  const [status, setStatus] = useState(false)
-
-  const getDog = () =>{
-    axios.get('https://dog.ceo/api/breeds/image/random').then( res => {
-      console.log(res)
-      setDog(res.data.message)
-      setStatus(true)
-    })
+  button{
+    border: 1px solid chartreuse;
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
   }
-  return (
-    <S.Dogs>
-    <Link to="/">Home</Link>
-    <button onClick={() => {getDog()}}>Click</button>
-    { status && <img src={dog} alt='doguinho' />}
+`;
 
-    </S.Dogs>
-
-  )
-}
+export default HomeStyled;
