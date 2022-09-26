@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import axios from 'axios'
-import * as S from './dogstyle'
+import * as S from './homeStyled'
 import {Link} from 'react-router-dom'
 
 export default function Dogpage() {
@@ -15,6 +15,7 @@ export default function Dogpage() {
       setStatus(true)
     })
   }
+  
   return (
     <S.Dogs>
         <Link to="/">Home</Link>
