@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
+// Header
 
-export const HomeStyled = styled.div`
+export const Dogs = styled.div`
   background-color: black;
   color: white;
 
@@ -14,4 +15,3 @@ export const HomeStyled = styled.div`
   }
 `;
 
-export default HomeStyled;
